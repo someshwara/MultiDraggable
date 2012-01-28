@@ -1,0 +1,28 @@
+
+<h1> Description </h1>
+Multi Draggable provides live and multi element draggable functionality to jQuery UI Draggable. 
+
+<h1> Usage: </h1>
+
+1. Can you used same way as you do for Draggable. In addition, you can add "group" option, which determines which group of elements to be dragged together.
+
+Ex 1:  $(".className").multiDraggable({ group: $(.className)});
+
+In the above case, dragging any element that matches .className , drags all elements matching .className to drag together.
+
+Ex 2:  $("#drag1").multiDraggable({ group: [$("#drag1",$("#drag2" ]});
+
+In this case, dragging #drag1, makes #drag2 drag along with it, even though #drag2 is not draggable.
+
+Ex 3: (".className").multiDraggable({ 
+                      group: $(.className)
+                      startNative: function (event,ui) {},
+                      stopNative : function (event,ui) {},
+                      dragNative : function (event,ui) {}
+                      });
+
+You can use all events, options and methods of jQuery UI Draggable, except that
+  -'start' is now 'startNative'
+  -'drag' is now 'dragNative'
+  -'stop' is now 'stopNative'
+  - everything else remains the same.
