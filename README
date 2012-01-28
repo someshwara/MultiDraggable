@@ -11,7 +11,7 @@ Ex 1:  $(".className").multiDraggable({ group: $(.className)});
 
 In the above case, dragging any element that matches .className , drags all elements matching .className to drag together.
 
-Ex 2:  $("#drag1").multiDraggable({ group: [$("#drag1",$("#drag2" ]});
+Ex 2:  $("#drag1").multiDraggable({ group: [$("#drag1"),$("#drag2") ]});
 
 In this case, dragging #drag1, makes #drag2 drag along with it, even though #drag2 is not draggable.
 
