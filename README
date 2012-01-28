@@ -16,7 +16,7 @@ Ex 2:  $("#drag1").multiDraggable({ group: [$("#drag1",$("#drag2" ]});
 In this case, dragging #drag1, makes #drag2 drag along with it, even though #drag2 is not draggable.
 
 Ex 3: (".className").multiDraggable({ 
-                      group: $(.className)
+                      group: $(.className),
                       startNative: function (event,ui) {},
                       stopNative : function (event,ui) {},
                       dragNative : function (event,ui) {}
