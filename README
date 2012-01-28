@@ -1,8 +1,9 @@
+Description
 
-<h1> Description </h1>
 Multi Draggable provides live and multi element draggable functionality to jQuery UI Draggable. 
 
-<h1> Usage: </h1>
+
+Usage:
 
 1. Can you used same way as you do for Draggable. In addition, you can add "group" option, which determines which group of elements to be dragged together.
 
