@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Multidraggable by someshwara</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Multidraggable</h1>
+        <p>Extends jQuery UI Draggable to add Multi Element Drag and Live functionality</p>
+
+        <p class="view"><a href="https://github.com/someshwara/MultiDraggable">View the Project on GitHub <small>someshwara/MultiDraggable</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/someshwara/MultiDraggable/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/someshwara/MultiDraggable/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/someshwara/MultiDraggable">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h3>Multi Draggable adds live and multi element draggable features to jQuery UI Draggable.</h3>
+
+<p>Can you used same way as you do for Draggable. In addition, you can add "group" option, which determines which group of elements to be dragged together. 
+"group" takes an array of jQuery selectors as input. Look at the examples below to</p>
+
+<hr><p><strong>ex 1:</strong> </p>
+
+<pre><code>$(".className").multiDraggable({ group: $(.className)});
+</code></pre>
+
+<p>In the above case, dragging any element that matches .className , drags all elements matching .className to drag together.</p>
+
+<hr><p><strong>ex 2:</strong> </p>
+
+<pre><code>$("#drag1").multiDraggable({ group: [$("#drag1"),$("#drag2") ]});
+</code></pre>
+
+<p>In this case, dragging #drag1, makes #drag2 drag along with it, even though #drag2 is not draggable.</p>
+
+<hr><p><strong>ex 3:</strong></p>
+
+<pre><code>(".className").multiDraggable({ 
+    group: $(.className),
+    startNative: function (event,ui) {},
+    stopNative : function (event,ui) {},
+    dragNative : function (event,ui) {}
+});
+</code></pre>
+
+<p>You can use all events, options and methods of jQuery UI Draggable, except that</p>
+
+<ul>
+<li>  'start' is now 'startNative'</li>
+<li>  'drag' is now 'dragNative'</li>
+<li>  'stop' is now 'stopNative'</li>
+<li>  everything else remains the same.</li>
+</ul>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/someshwara">someshwara</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
