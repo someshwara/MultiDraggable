@@ -8,7 +8,7 @@
  * MultiDraggable is a jQuery plugin which extends jQuery UI Draggable to add multi drag and live functionality.
  *
 **/
-(function ($) {
+(function ($, undefined) {
    $.fn.multiDraggable = function (opts) {
    	var initLeftOffset = []
    	    ,initTopOffset = [];	    
